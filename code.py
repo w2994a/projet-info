@@ -11,10 +11,11 @@ def is_bisextile():
     elif year % 4 == 0:
         return True
     return False
+
 print(is_bisextile())
 """
 #code IMC
-"""
+
 def imc():
     print('Pour calculer votre IMC')
     m = input('Entrer votre poids : ')
@@ -37,10 +38,11 @@ def imc():
     elif i > 40:
         print('obesite morbide')
 imc()
-"""
+
 # code arithetique alphabetique
 """
 alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+
 def calcul_point(mot): # 1er code
     t = 0
     for lettre in mot:
@@ -72,6 +74,7 @@ calcul_point3()
 #code devine nombre
 """
 import random
+
 def devine_nombre():
     m = random.randint(0,100)
     for n in range(6):
@@ -88,31 +91,24 @@ def devine_nombre():
         print(m)
 devine_nombre()
 """
-#
+#code faire deviner un nombre
 """
-def etat(x,y): #etat du jeu
-    etat = []
-
-    for compteur in range(y):
-        for compteur in range(x):
-            etat.append(False)
-        etat.append(True)
-    for compteur in range(9-y):
-        for compteur in range(7-x):
-            etat.append(False)
-        return etat
-
-    etat_str = ''
-    for ligne in rep3:
-        for element in ligne:
-            if element == True:
-                etat_str = etat_str + '+'
-            else:
-                etat_str = etat_str + '-'
-        etat_str = etat_str + '\n'
-    print(etat_str)
-    return
-
-print(etat(0,0))
+def faire_deviner_nb():
+    m = input()
+        for n in range(6):
+            d = input
 """
-#le chiffre de cesar
+"""
+def build_list(i):
+    new_list = []
+
+    for compteur in range(i):
+        new_list.append(False)
+    new_list.append(True)
+    for compteur in range(8-i):
+        new_list.append(False)
+    return new_list
+
+new_list = build_list(0)
+print(new_list)
+"""
